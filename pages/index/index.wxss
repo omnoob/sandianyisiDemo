@@ -1,0 +1,132 @@
+/**index.wxss**/
+
+.topBar {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+.topRow {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.colorRow {
+  height: 6rpx;
+  width: 100rpx;
+  background: orange;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.videoArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  border: 5rpx solid #e9e9e9;
+  border-radius: 5px;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 20rpx;
+}
+
+.demoname {
+  font-size: 50rpx;
+  margin-right: 20rpx;
+}
+
+.time {
+  font-size: 30rpx;
+  color: #aeaeae;
+}
+
+/* video {
+  height: 300rpx;
+  width: 500rpx;
+} */
+
+.videoImage {
+  height: 300rpx;
+  width: 600rpx;
+}
+
+.play {
+  position: relative;
+  left: 280rpx;
+  top: -230rpx;
+  margin: 10rpx;
+}
+
+.rader {
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  left: 450rpx;
+  top: -100rpx;
+}
+
+.loadMessage {
+  color: orange;
+  font-size: 50rpx;
+  width: 90%;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.msgBtn {
+  font-size: 40rpx;
+}
+
+.messageBoard {
+  width: 90%;
+  /* height: 30rpx; */
+  border: 5rpx solid #e9e9e9;
+  border-radius: 5px;
+  padding: 20rpx;
+}
+.changeButton{
+  height: 50rpx;
+  width: 200rpx;
+  border: 1px solid red;
+}
+.inputReply{
+  position:fixed;
+  left: 0%;
+  top: 100%;
+  border: 1px solid orange; 
+
+}

@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="topBar">
+    <text>源码熊</text>
+    <text>源码熊编程</text>
+  </view>
+  <view class="topRow">
+    <view class="colorRow"></view>
+  </view>
+  <scroll-view class="userinfo" enable-flex="true" scroll-y="true">
+    <image src="/static/workSpace.jpg" style="height: 100rpx;width: 200rpx;"></image>
+    <view class="work">
+      <view style="width: 90%;" wx:for="{{videoList}}" wx:for-index="idx" wx:key="idx">
+        <view class="videoArea">
+          <view class="title">
+            <view style="height:50rpx;width:8rpx;background:#F9A428;margin-right: 20rpx;"></view>
+            <text class="demoname">样例</text>
+            <text class="time">2020.3.28 11:03</text>
+          </view>
+          <image class="videoImage" src="{{item.cover}}" mode="scaleToFill">
+            <icon class="iconfont icon-ziyuan play" bindtap="palyVideo" id="{{idx}}"></icon>
+            <image class="rader " src="{{item.radar}} "></image>
+          </image>
+          <view class="loadMessage">
+            <text class="msgBtn" bindtap="inputMsg" id="{{idx}}">...</text>
+          </view>
+        </view>
+        <view class="messageBoard">
+          <text>老师点评: </text>
+          <text style="color: orange"> 小明很用心,做的很好。</text>
+          <view class="reply" wx:for="{{item.messageList}}" wx:for-item="newitem" vwx:for-index="newIdx " wx:key="newIdx " style="display:{{lenghOrTouch?'bolck':'none'}}">
+            <text style="color: orange">{{newitem.user}}</text> 回复：{{newitem.msg}}
+          </view>
+        </view>
+        <button type="default" bindtap="changeMsgBoard" id="{{idx}}">点击我展开评论</button>
+
+        <input class="inputReply" value="{{inputValue}}" adjust-position="false" focus="{{focus}}" confirm-type="send" bindconfirm="confirm"></input>
+      </view>
+
+    </view>
+  </scroll-view>
+</view>
